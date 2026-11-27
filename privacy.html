@@ -13,7 +13,7 @@
 <main>
   <p class="muted"><a href="index.html">← Upwell</a></p>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, and Twitch)</p>
+  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, Twitch, and YouTube Analytics)</p>
 
   <p>Upwell is a desktop app that runs on your own computer. This policy explains what it does with
   your information. The short version: your data stays on your computer, and Upwell only sends
@@ -24,7 +24,8 @@
     <li>Your videos. Upwell reads them where they are and never changes the originals.</li>
     <li>Your library: video details, titles, descriptions, tags, notes, exports, and upload history,
       kept in a local database in your Windows user folder.</li>
-    <li>Channel statistics you import from a YouTube Studio export file.</li>
+    <li>Channel statistics, whether you import them from a YouTube Studio export file or Upwell reads
+      them from YouTube Analytics.</li>
     <li>Sign-in credentials (your Google sign-in token and any API key you add), kept in Windows
       Credential Manager on your computer.</li>
   </ul>
@@ -32,21 +33,25 @@
   credentials, or any usage data. Upwell has no analytics, ads, or tracking.</p>
 
   <h2>Google and YouTube data</h2>
-  <p>If you connect a YouTube channel, Upwell asks Google for three permissions:</p>
+  <p>If you connect a YouTube channel, Upwell asks Google for four permissions:</p>
   <ul>
     <li><strong>Upload videos</strong> (<code>youtube.upload</code>): to upload the video file, title,
       description, tags, settings, and thumbnail you choose, when you press Upload.</li>
     <li><strong>View your YouTube account</strong> (<code>youtube.readonly</code>): to show which channel
-      is connected (its name and handle).</li>
+      is connected (its name and handle), list your channel's videos, and read their public view, like, and comment counts.</li>
     <li><strong>Manage your YouTube account</strong> (<code>youtube.force-ssl</code>): to schedule the lives you
       plan in Upwell, connect them to your stream key, set their title, description, tags, category,
       and thumbnail, update a replay's details and chapters after a stream, and read your stream keys'
       names so you can pick one. Upwell only changes what you ask it to, when you press Schedule, Save, or
       Update, and only on the live or video you chose.</li>
+    <li><strong>View YouTube Analytics reports</strong> (<code>yt-analytics.readonly</code>): to read your
+      videos' statistics (views, watch time, thumbnail impressions and click-through, likes, comments, shares,
+      subscribers, and live viewers) for Channel insights and each video's Results. This is read-only.</li>
   </ul>
   <p>Upwell never deletes anything on YouTube, even though the "manage" permission technically allows it.
   It can't access anything else in your Google account, such as Gmail or Drive. The information Google
-  returns (your channel's name, your stream keys' names, and the IDs of the videos and lives you publish)
+  returns (your channel's name, your stream keys' names, the IDs of the videos and lives you publish, and your
+  videos' statistics)
   is stored only on your computer and used only to show you what's connected and link to what you've
   published. Upwell never stores or shows your stream key itself. None of it is sold, shared, or used for
   advertising.</p>
