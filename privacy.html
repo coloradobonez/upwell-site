@@ -12,7 +12,7 @@
 <main>
   <p class="muted"><a href="index.html">← Upwell</a></p>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective November 26, 2026 (updated the same day to cover scheduling lives)</p>
+  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, and Twitch)</p>
 
   <p>Upwell is a desktop app that runs on your own computer. This policy explains what it does with
   your information. The short version: your data stays on your computer, and Upwell only sends
@@ -38,9 +38,10 @@
     <li><strong>View your YouTube account</strong> (<code>youtube.readonly</code>): to show which channel
       is connected (its name and handle).</li>
     <li><strong>Manage your YouTube account</strong> (<code>youtube.force-ssl</code>): to schedule the lives you
-      plan in Upwell, connect them to your stream key, and set their title, description, tags, category,
-      and thumbnail, and to read your stream keys' names so you can pick one. Upwell only changes what you
-      ask it to, when you press Schedule or Save, and only on lives and videos you published from Upwell.</li>
+      plan in Upwell, connect them to your stream key, set their title, description, tags, category,
+      and thumbnail, update a replay's details and chapters after a stream, and read your stream keys'
+      names so you can pick one. Upwell only changes what you ask it to, when you press Schedule, Save, or
+      Update, and only on the live or video you chose.</li>
   </ul>
   <p>Upwell never deletes anything on YouTube, even though the "manage" permission technically allows it.
   It can't access anything else in your Google account, such as Gmail or Drive. The information Google
@@ -53,6 +54,21 @@
   including the Limited Use requirements. Uploads are also subject to the
   <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and
   <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+  <h2>Twitch data</h2>
+  <p>If you connect a Twitch channel, Upwell signs in with Twitch's device code flow (you approve a
+  short code on twitch.tv) and asks for two permissions:</p>
+  <ul>
+    <li><strong>Manage your broadcast</strong> (<code>channel:manage:broadcast</code>): to set your stream's
+      title, category, and tags when you press Set on Twitch.</li>
+    <li><strong>Manage your schedule</strong> (<code>channel:manage:schedule</code>): to add a stream you plan
+      in Upwell to your Twitch schedule when you press Add to schedule.</li>
+  </ul>
+  <p>Upwell also reads your channel's name and your past broadcasts' titles, dates, lengths, and view
+  counts to show them in Channel insights. The sign-in token stays in Windows Credential Manager on your
+  computer, and the information is stored only there. Nothing is sold, shared, or used for advertising.
+  You can disconnect in Upwell's settings or in your
+  <a href="https://www.twitch.tv/settings/connections">Twitch connections</a>.</p>
 
   <h2>Optional AI writing help</h2>
   <p>If you add your own Anthropic API key and choose "Write it with Claude", Upwell sends the text
