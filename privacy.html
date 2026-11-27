@@ -13,7 +13,7 @@
 <main>
   <p class="muted"><a href="index.html">← Upwell</a></p>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, Twitch, and YouTube Analytics)</p>
+  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, Twitch, YouTube Analytics, TikTok, Instagram, and Facebook)</p>
 
   <p>Upwell is a desktop app that runs on your own computer. This policy explains what it does with
   your information. The short version: your data stays on your computer, and Upwell only sends
@@ -76,6 +76,36 @@
   You can disconnect in Upwell's settings or in your
   <a href="https://www.twitch.tv/settings/connections">Twitch connections</a>.</p>
 
+  <h2>TikTok data</h2>
+  <p>If you connect a TikTok account, Upwell signs in with TikTok's Login Kit (in your browser) and asks
+  for three permissions:</p>
+  <ul>
+    <li><strong>Basic profile</strong> (<code>user.info.basic</code>): to show which account is connected.</li>
+    <li><strong>Post to TikTok</strong> (<code>video.publish</code>): to post the video you choose, with the
+      caption, audience, and settings you pick, when you press Post to TikTok.</li>
+    <li><strong>Upload to drafts</strong> (<code>video.upload</code>): to send the video you choose to your
+      TikTok drafts when you press Send to TikTok drafts.</li>
+  </ul>
+  <p>Upwell reads your account's nickname, username, and posting options (such as who can watch and
+  whether comments, Duet, and Stitch are allowed) each time you open the TikTok post form, and keeps the
+  IDs of the posts it made. The sign-in token stays in Windows Credential Manager on your computer, and
+  the information is stored only there. Nothing is sold, shared, or used for advertising. You can
+  disconnect in Upwell's settings, which revokes Upwell's access, or under Security and permissions in
+  the TikTok app.</p>
+
+  <h2>Instagram and Facebook data</h2>
+  <p>If you connect Instagram and Facebook, Upwell signs in with Facebook Login and asks for permission to
+  see the Facebook Pages you manage and their linked Instagram professional accounts
+  (<code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>business_management</code>,
+  <code>instagram_basic</code>), to post Reels to that Instagram account
+  (<code>instagram_content_publish</code>), and to post Reels to your Page (<code>pages_manage_posts</code>).
+  Upwell posts only the video and caption you choose, when you press Post and confirm.</p>
+  <p>Upwell keeps the name and ID of the Page you pick, its Instagram username and ID, and the IDs and
+  links of the Reels it posted. The Page token stays in Windows Credential Manager on your computer, and
+  the information is stored only there. Nothing is sold, shared, or used for advertising. You can
+  disconnect in Upwell's settings, and remove Upwell's access in your Facebook settings under Business
+  Integrations or in Instagram's Accounts Center.</p>
+
   <h2>Optional AI writing help</h2>
   <p>If you add your own Anthropic API key and choose "Write it with Claude", Upwell sends the text
   details you entered about that video (for example the subject, style, and notes), your brand's
@@ -89,6 +119,8 @@
     <li><strong>Disconnect YouTube</strong> in Upwell's settings. This revokes Upwell's access and
       deletes the stored sign-in token. You can also remove access at
       <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+    <li><strong>Disconnect TikTok, Instagram and Facebook, or Twitch</strong> in Upwell's settings. This
+      deletes the stored sign-in tokens from your computer.</li>
     <li><strong>Delete everything</strong> by uninstalling Upwell and removing its data folder
       (<code>%APPDATA%\app.upwell.desktop</code>). Your original videos are never touched.</li>
   </ul>
@@ -98,7 +130,7 @@
   Questions? Open an issue at
   <a href="https://github.com/coloradobonez/upwell-site/issues">github.com/coloradobonez/upwell-site</a>.</p>
 
-  <footer><a href="index.html">Upwell</a> · Not affiliated with or endorsed by YouTube or Google.</footer>
+  <footer><a href="index.html">Upwell</a> · <a href="terms.html">Terms of service</a> · Not affiliated with or endorsed by YouTube, Google, TikTok, Meta, or Twitch.</footer>
 </main>
 </body>
 </html>
