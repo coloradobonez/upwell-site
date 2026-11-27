@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 160 160">
+  <!-- Upwell: three U-shaped currents lifting a gold pearl to the surface. -->
+  <rect width="160" height="160" rx="38" fill="#2f4a56"/>
+  <g fill="none" stroke-width="9" stroke-linecap="round" transform="translate(0 -4)">
+    <path d="M30 36 V88 A50 50 0 0 0 130 88 V36" stroke="#e9efe6"/>
+    <path d="M46 36 V88 A34 34 0 0 0 114 88 V36" stroke="#cfe0d3"/>
+    <path d="M62 62 V88 A18 18 0 0 0 98 88 V62" stroke="#9fc4bb"/>
+  </g>
+  <circle cx="80" cy="38" r="11" fill="#f0c873"/>
+</svg>
