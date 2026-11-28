@@ -13,7 +13,7 @@
 <main>
   <p class="muted"><a href="index.html">← Upwell</a></p>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, Twitch, YouTube Analytics, TikTok, Instagram, Facebook, and more AI choices)</p>
+  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, Twitch, YouTube Analytics, TikTok, Instagram, Facebook, and more AI choices, and on November 27, 2026 to describe the sign-in helper)</p>
 
   <p>Upwell is a desktop app that runs on your own computer. This policy explains what it does with
   your information. The short version: your data stays on your computer, and Upwell only sends
@@ -29,8 +29,28 @@
     <li>Sign-in credentials (your Google sign-in token and any API key you add), kept in Windows
       Credential Manager on your computer.</li>
   </ul>
-  <p>There are no Upwell servers. The developer never receives your videos, your library, your
-  credentials, or any usage data. Upwell has no analytics, ads, or tracking.</p>
+  <p>The developer never receives your videos, your library, your credentials, or any usage data.
+  Upwell has no analytics, ads, or tracking.</p>
+
+  <h2>The sign-in helper</h2>
+  <p>TikTok and Meta only complete a sign-in when the app's secret key is included, and a secret
+  can't be kept safe inside a desktop app. So when you connect TikTok, Instagram, or Facebook with
+  Upwell's built-in connection, a small sign-in helper run for Upwell (hosted on Cloudflare) adds
+  that secret:</p>
+  <ul>
+    <li>The one-time sign-in code from TikTok or Facebook goes from your computer to the helper, which
+      adds the secret, sends it on to TikTok or Meta, and passes their answer (your sign-in token)
+      straight back to your computer. For TikTok, renewing the sign-in and disconnecting go the same
+      way.</li>
+    <li>The helper stores nothing: no codes, tokens, accounts, or logs of what passes through. Your
+      Facebook Page token never passes through it; Upwell gets that from Facebook directly.</li>
+    <li>Like any website, Cloudflare sees your computer's network address when the helper is used; the
+      helper uses it only to limit repeated attempts from one network.</li>
+    <li>Your videos, captions, and library never go through it. Posting goes straight from your
+      computer to TikTok, Instagram, or Facebook.</li>
+  </ul>
+  <p>If you set up your own TikTok or Meta developer app in Upwell's settings instead, the helper isn't
+  used at all. YouTube and Twitch don't need it.</p>
 
   <h2>Google and YouTube data</h2>
   <p>If you connect a YouTube channel, Upwell asks Google for four permissions:</p>
@@ -89,7 +109,8 @@
   <p>Upwell reads your account's nickname, username, and posting options (such as who can watch and
   whether comments, Duet, and Stitch are allowed) each time you open the TikTok post form, and keeps the
   IDs of the posts it made. The sign-in token stays in Windows Credential Manager on your computer, and
-  the information is stored only there. Nothing is sold, shared, or used for advertising. You can
+  the information is stored only there. With Upwell's built-in connection, signing in, renewing, and
+  disconnecting pass through the sign-in helper described above, which stores nothing. Nothing is sold, shared, or used for advertising. You can
   disconnect in Upwell's settings, which revokes Upwell's access, or under Security and permissions in
   the TikTok app.</p>
 
@@ -102,7 +123,8 @@
   Upwell posts only the video and caption you choose, when you press Post and confirm.</p>
   <p>Upwell keeps the name and ID of the Page you pick, its Instagram username and ID, and the IDs and
   links of the Reels it posted. The Page token stays in Windows Credential Manager on your computer, and
-  the information is stored only there. Nothing is sold, shared, or used for advertising. You can
+  the information is stored only there. With Upwell's built-in connection, the one-time sign-in code
+  passes through the sign-in helper described above, which stores nothing; the Page token never does. Nothing is sold, shared, or used for advertising. You can
   disconnect in Upwell's settings, and remove Upwell's access in your Facebook settings under Business
   Integrations or in Instagram's Accounts Center.</p>
 
