@@ -13,7 +13,7 @@
 <main>
   <p class="muted"><a href="index.html">← Upwell</a></p>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, Twitch, YouTube Analytics, TikTok, Instagram, Facebook, and more AI choices, and on November 27, 2026 to describe the sign-in helper)</p>
+  <p class="muted">Effective November 26, 2026 (updated the same day to cover lives, replays, Twitch, YouTube Analytics, TikTok, Instagram, Facebook, and more AI choices, and on November 27, 2026 to describe the sign-in helper, how long YouTube data is kept, and the update check)</p>
 
   <p>Upwell is a desktop app that runs on your own computer. This policy explains what it does with
   your information. The short version: your data stays on your computer, and Upwell only sends
@@ -53,7 +53,7 @@
   used at all. YouTube and Twitch don't need it.</p>
 
   <h2>Google and YouTube data</h2>
-  <p>If you connect a YouTube channel, Upwell asks Google for four permissions:</p>
+  <p>Upwell uses YouTube API Services. If you connect a YouTube channel, Upwell asks Google for four permissions:</p>
   <ul>
     <li><strong>Upload videos</strong> (<code>youtube.upload</code>): to upload the video file, title,
       description, tags, settings, and thumbnail you choose, when you press Upload.</li>
@@ -70,11 +70,18 @@
   </ul>
   <p>Upwell never deletes anything on YouTube, even though the "manage" permission technically allows it.
   It can't access anything else in your Google account, such as Gmail or Drive. The information Google
-  returns (your channel's name, your stream keys' names, the IDs of the videos and lives you publish, and your
-  videos' statistics)
-  is stored only on your computer and used only to show you what's connected and link to what you've
-  published. Upwell never stores or shows your stream key itself. None of it is sold, shared, or used for
+  returns (your channel's name, your stream keys' names, the IDs of the videos and lives you publish, your
+  videos' titles, descriptions, tags, and publish times, and their statistics)
+  is stored only on your computer and used only to show you what's connected, link to what you've
+  published, and learn what works on your channel (the title score, the best time to post, and tag
+  suggestions). Upwell never stores or shows your stream key itself. None of it is sold, shared, or used for
   advertising.</p>
+  <p><strong>How long it's kept.</strong> Upwell refreshes this information from YouTube when you open it.
+  Videos YouTube no longer returns (for example, ones you deleted) are removed from Upwell after 30 days.
+  When you disconnect YouTube in Upwell, everything Upwell got from YouTube is deleted from your computer
+  right away. If you remove Upwell's access on Google's side instead, or don't open Upwell for a while, it's
+  deleted 30 days after the last successful refresh. Numbers you type in yourself and Upwell's own records
+  of what you published stay until you remove them.</p>
   <p>Upwell's use of information received from Google APIs adheres to the
   <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
   including the Limited Use requirements. Uploads are also subject to the
@@ -139,10 +146,16 @@
   <a href="https://policies.google.com/privacy">Google</a>. If you use a local AI (Ollama or LM Studio),
   the request stays on your computer. If you don't add a key or choose a local AI, nothing is sent.</p>
 
+  <h2>Checking for updates</h2>
+  <p>Once a day, Upwell downloads a small file from its website to see whether a newer version is out,
+  and tells you if one is. Nothing about you or your videos is sent; like any website, the site's host
+  sees your computer's network address. You can turn this off in Settings → About.</p>
+
   <h2>Removing your data</h2>
   <ul>
-    <li><strong>Disconnect YouTube</strong> in Upwell's settings. This revokes Upwell's access and
-      deletes the stored sign-in token. You can also remove access at
+    <li><strong>Disconnect YouTube</strong> in Upwell's settings. This revokes Upwell's access,
+      deletes the stored sign-in token, and deletes the channel's videos, statistics, and insights Upwell
+      got from YouTube. You can also remove access at
       <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
     <li><strong>Disconnect TikTok, Instagram and Facebook, or Twitch</strong> in Upwell's settings. This
       deletes the stored sign-in tokens from your computer.</li>
